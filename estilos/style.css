@@ -180,6 +180,37 @@ article h2{
   border-radius: 4px;
 }
 
+#formacao-container{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+.curso{
+  background-color: var(--fundo-principal);
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  padding-left: 15px;
+  transition: border-left-width 0.4s, border-color 0.3s;
+}
+
+.curso:hover{
+  border-left-width: 15px;
+  border-color: var(--destaque);
+  cursor: pointer;
+}
+
+.periodo{
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+.instituicao{
+  color: var(--destaque-inverso);
+  font-size: 1.1rem;
+}
+
 @media screen and (min-width: 768px) {
     #skill-container{
       grid-template-columns: 1fr 1fr;
