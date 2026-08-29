@@ -144,3 +144,44 @@ article h2{
   height: 100%;
   border-radius: 8px;
 }
+
+#skill-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nome{
+  font-weight: bold;
+  color: var(--texto);
+}
+
+.porcent{
+  font-weight: bold;
+  color: var(--destaque);
+}
+
+.barra{
+  width: 100%;
+  height: 8px;
+  background-color: var(--fundo-principal);
+  border-radius: 4px;
+}
+
+.progresso{
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    #skill-container{
+      grid-template-columns: 1fr 1fr;
+    }
+}
