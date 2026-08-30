@@ -36,7 +36,9 @@ header{
   padding: 10px;
   display: flex;
   justify-content: flex-end;
-
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 #menu ul{
@@ -269,7 +271,7 @@ footer a{
       max-width: 80%;
     }
 
-    .projeto-container img{
+    .projeto img{
       aspect-ratio: 1/1;
       max-width: 20%;
       max-height: 200px;
