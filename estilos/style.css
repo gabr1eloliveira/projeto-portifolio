@@ -258,7 +258,25 @@ footer a{
 }
 
 @media screen and (min-width: 768px) {
-    #skill-container{
+  
+  main{
+    grid-template-columns: auto 300px 1fr auto;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  #ficha{
+    grid-column: 2 / 3;
+    height: fit-content;
+    position: sticky;
+    top: 65px;
+  }
+  
+  #detalhes{
+    grid-column: 3 / 4;
+  }
+
+  #skill-container{
       grid-template-columns: 1fr 1fr;
     }
 
